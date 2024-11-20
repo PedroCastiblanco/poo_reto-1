@@ -10,13 +10,17 @@ def Calcu():
             b.append(a[-2])
         
     if b[-1]=="+":
-        return print("La suma entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]+b[1]))
+        #return print("La suma entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]+b[1]))
+        return print(b[0]+b[1])
     if b[-1]=="-":
-        return print("La resta entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]-b[1]))
+        #return print("La resta entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]-b[1]))
+        return print(b[0]-b[1])
     if b[-1]=="*":
-        return print("La multiplicación entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]*b[1]))
+        #return print("La multiplicación entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]*b[1]))
+        return print(b[0]*b[1])
     if b[-1]=="/":
-        return print("La division entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]/b[1]))
+        #return print("La division entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]/b[1]))
+        return print(b[0]/b[1])
 
 Calcu()
 
