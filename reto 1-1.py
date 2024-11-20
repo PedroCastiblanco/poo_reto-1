@@ -1,4 +1,4 @@
-a=input()
+a=input("Ingrese los digitos y el simbolo de la operacion: ")
 b=[]
 c=0
 for i in range(len(a)):
@@ -9,13 +9,13 @@ for i in range(len(a)):
         b.append(a[-2])
     
 if b[-1]=="+":
-    print(b[0]+b[1])
+    print("La suma entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]+b[1]))
 if b[-1]=="-":
-    print(b[0]-b[1])
+    print("La resta entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]-b[1]))
 if b[-1]=="*":
-    print(b[0]*b[1])
+    print("La multiplicación entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]*b[1]))
 if b[-1]=="/":
-    print(b[0]/b[1])
+    print("La division entre "+str(b[0])+" y "+str(b[1])+" es: "+str(b[0]/b[1]))
 
 
 
