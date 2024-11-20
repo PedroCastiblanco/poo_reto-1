@@ -24,10 +24,11 @@ def Acronimo(a:list):
             if b[i]==b[x] and a[x] not in c and i!=x:
                 c.append(a[x])
                 b[x]=a[x]
-            if len(c)!=0 and c not in z:
-                c.append(a[i])
-                b[i]=a[i]
-                z.append(c)
+        if len(c)!=0 and c not in z:
+             c.insert(0,a[i])
+             #c.append()
+             b[i]=a[i]
+             z.append(c)
     return z
 
 x=separar(input("lista: "))
